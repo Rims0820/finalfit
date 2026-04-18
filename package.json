@@ -1,7 +1,15 @@
 {
   "name": "ai-fitness-coach",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "workspaces": [
+    "backend",
+    "ai-fitness-coach"
+  ],
   "scripts": {
+    "start": "node backend/server.js",
     "build:css": "tailwindcss -i ./ai-fitness-coach/src/input.css -o ./dist/output.css ",
     "postinstall": "echo \"postinstall complete\""
   },
